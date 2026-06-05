@@ -20,8 +20,6 @@ public class PlayerMovement : MonoBehaviour{
 
         Turning();
 
-        Actions();
-
     }
 
     private void ForwardMovement(){
@@ -51,11 +49,5 @@ public class PlayerMovement : MonoBehaviour{
         }
     }
 
-    private void Actions(){
-        if(Input.GetKeyDown("e")){
-            anim.SetBool("Waving", true);
-        } else if(Input.GetKeyUp("e")){
-            anim.SetBool("Waving", false);
-        }
-    }
+    
 }
